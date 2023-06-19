@@ -37,19 +37,29 @@
   </style>
   <!-- Google Tag Manager -->
   <script>
-    window.vrqrsizingchartid = "dummy-sizing-chart-id";
-  </script>
 
-  <script>(function (w, d, s, l, i) {
+    window.vrqrsizingchartid = "dummy-sizing-chart-id";
+
+
+    (function (w) {
+      w['vrqrSolution'] = w['vrqrSolution'] || []; 
+      w['vrqrSolution']['sizingchartid'] = 'dummy sizing chart id'; // enter sizing chart id here
+      w['vrqrSolution']['countrycode'] = 'int'; // enter country code here
+    })(window);
+
+
+    (function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
         'gtm.start':
           new Date().getTime(), event: 'gtm.js'
       }); var f = d.getElementsByTagName(s)[0],
         j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-K3FTHBQ');</script>
+    })(window, document, 'script', 'dataLayer', 'GTM-K3FTHBQ');
 
-    
+  </script>
+
+
   <!-- End Google Tag Manager -->
 </head>
 
@@ -65,7 +75,8 @@
     <button class="button">Click Me!</button>
 
     <h2>Some Heading</h2>
-    <p data-id="123456">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis auctor nisi, ut efficitur eros venenatis
+    <p data-id="123456">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis auctor nisi, ut
+      efficitur eros venenatis
       vel.</p>
 
     <ul>
