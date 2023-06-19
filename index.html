@@ -38,14 +38,11 @@
   <!-- Google Tag Manager -->
   <script>
 
-    window.vrqrsizingchartid = "dummy-sizing-chart-id";
-
-
-    (function (w) {
-      w['vrqrSolution'] = w['vrqrSolution'] || []; 
-      w['vrqrSolution']['sizingchartid'] = 'dummy sizing chart id'; // enter sizing chart id here
-      w['vrqrSolution']['countrycode'] = 'int'; // enter country code here
-    })(window);
+    (function (w, k) {
+      w[k] = w[k] || []; 
+      w[k]['sizingchartid'] = 'dummy sizing chart id'; // enter sizing chart id here
+      w[k]['countrycode'] = 'int'; // enter country code here
+    })(window, 'vrqrSolution');
 
 
     (function (w, d, s, l, i) {
@@ -65,8 +62,10 @@
 
 <body>
   <!-- Google Tag Manager (noscript) -->
+  <!--
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3FTHBQ" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
+  -->
   <!-- End Google Tag Manager (noscript) -->
   <div class="container">
     <h1>Welcome to the Test Web Page</h1>
